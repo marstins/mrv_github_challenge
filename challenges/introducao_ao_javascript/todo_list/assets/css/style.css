@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+    margin: 0;
+    padding: 0; 
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+}
+
+.container {
+    height: 80%;
+    width: 40%;
+    background: rgb(221, 221, 221);
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 40px 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.task_container {
+    width: 50%;
+    margin-top: 30px;
+    text-align: left; 
+}
+
+input[type=text] {
+    border: none;
+    border-radius: 10px;
+    padding: 5px;  
+}
+
+button {
+    width: 50px;
+    background: rgb(63, 131, 255);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+#list_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+#list_container div {
+    margin: 5px 0;
+}
+
+input[type=checkbox] {
+    margin-right: 5px;
+}
+
+input[type=checkbox]:checked + label {
+    color: rgb(134, 1, 1);
+    text-decoration: line-through;   
+}
+
